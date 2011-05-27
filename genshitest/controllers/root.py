@@ -12,6 +12,8 @@ from genshitest.controllers.secure import SecureController
 
 from genshitest.controllers.error import ErrorController
 
+from genshitest.widgets import LogGrid
+
 __all__ = ['RootController']
 
 
@@ -36,7 +38,7 @@ class RootController(BaseController):
     @expose('genshitest.templates.index')
     def index(self):
         """Handle the front-page."""
-        return dict(page='index')
+        return dict(gridwidget=LogGrid, page='awesome-sauce')
 
     @expose('genshitest.templates.about')
     def about(self):
