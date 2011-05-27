@@ -8,3 +8,4 @@ apply/public/photos/*.jpg
 doc/build
 *.egg*
 README.pdf
+devdata.db

@@ -40,6 +40,10 @@ class RootController(BaseController):
         """Handle the front-page."""
         return dict(gridwidget=LogGrid, page='awesome-sauce')
 
+    @expose('json')
+    def jqgrid(self, *args, **kwargs):
+        return LogGrid.request(request).body
+
     @expose('genshitest.templates.about')
     def about(self):
         """Handle the 'about' page."""
