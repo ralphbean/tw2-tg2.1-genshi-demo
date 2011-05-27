@@ -1,0 +1,10 @@
+*.pyc
+*.swp
+ez_setup
+data
+build
+dist
+apply/public/photos/*.jpg
+doc/build
+*.egg*
+README.pdf
